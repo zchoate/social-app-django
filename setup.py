@@ -41,7 +41,10 @@ setup(
     long_description=long_description(),
     long_description_content_type="text/markdown",
     python_requires=">=3.7",
-    install_requires=load_requirements(),
+    install_requires=[
+        'git+https://github.com/zchoate/social-core@update-azuread-b2c#egg=social-auth-core',
+        load_requirements()
+    ],
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Topic :: Internet",
